@@ -12,14 +12,7 @@ function displayTree(dirPath){
     for(let i = 0 ; i < dirContents.length ; i++){
         let dirContent = dirContents[i] ;
 
-        let contentsPath = path.join(dirPath,dirContent) ;
-
-        if(fs.lstatSync(contentsPath).isDirectory()){
-            displayTree(contentsPath) ;
-        }
-        else{
-            console.log(dirContent) ;
-        }
+        console.log(dirContent) ;
     }
 }
 
