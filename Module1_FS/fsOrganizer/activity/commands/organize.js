@@ -10,10 +10,11 @@ let extensions = {
 
 
 function organize(src){
-    
+
     console.log(`organize command executed with path ${src}`) ;
     let destFolderPath = path.join(src,"OrganizedFiles") ; // ==> Random/Organized_Files
-    fs.mkdirSync(destFolderPath) ;
+    if(!fs.existsSync(destFolderPath))
+        fs.mkdirSync(destFolderPath) ;
     sortFoler(src,destFolderPath) ;
 
 }
