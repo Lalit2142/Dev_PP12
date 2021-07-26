@@ -34,4 +34,11 @@ const fs = require("fs");
 // fs.mkdirSync("./dir1") ;
 // fs.mkdirSync("./dir1") ;==> will give error becoz dir already exists
 
-fs.rmdirSync("./dir1") ;
+// fs.rmdirSync("./dir1") ;
+
+let arr = ['txt','exe','png'] ;
+
+let content = 'abc.txt' ;
+
+let strArr = content.split(".") ;
+console.log(strArr) ;
