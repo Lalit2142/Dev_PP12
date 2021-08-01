@@ -96,47 +96,6 @@ function getExtensionType(extension){
     return type ;
 }
 
-
-
-
-// function sortFoler(dirPath,destFolderPath){
-
-//     let dirContents = fs.readdirSync(dirPath) ;
-
-//     for(let i = 0 ; i < dirContents.length ; i++){
-//         let dirContent = dirContents[i] ;
-
-//         let contentsPath = path.join(dirPath,dirContent) ;
-
-//         if(fs.lstatSync(contentsPath).isDirectory()){
-//             continue ;
-//         }
-
-//         let filePath = contentsPath ;
-
-//         let extension = path.extname(filePath) ;
-//         let type = '' ;
-//         for(let key in extensions){
-//             if(extensions[key].includes(extension.slice(1))){
-//                 type = key ;
-//                 break ;
-//             }
-//         }
-//         if(type == ''){
-//             type = 'others' ;
-//         }
-
-       
-//         let finalPath = path.join(destFolderPath,type) ;
-//         if(!fs.existsSync(finalPath)){
-//             fs.mkdirSync(finalPath) ;
-//         }
-//         let src =  filePath ;                                                   // Downloads/Misc/def.png
-//         let dest = path.join(finalPath,path.basename(filePath));               // Downloads/Misc/Images/def.png
-//         fs.copyFileSync(src,dest) ;   
-//     }
-// }
-
 module.exports = {
     organizeCmd : organize ,
 }

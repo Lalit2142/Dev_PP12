@@ -6,7 +6,6 @@ let input = process.argv.slice(2) ;
 let helpObj = require("./commands/help") ;
 let treeObj = require("./commands/tree") ;
 let organizeObj = require("./commands/organize") ;
-const { dir } = require("console");
 
 let command = input[0] ;
 
