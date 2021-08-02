@@ -36,9 +36,16 @@ const fs = require("fs");
 
 // fs.rmdirSync("./dir1") ;
 
-let arr = ['txt','exe','png'] ;
+// let arr = ['txt','exe','png'] ;
 
-let content = 'abc.txt' ;
+// let content = 'abc.txt' ;
 
-let strArr = content.split(".") ;
-console.log(strArr) ;
+// let strArr = content.split(".") ;
+// console.log(strArr) ;
+
+let arr = [1,2,3,4,5] ;
+
+let narr = arr.splice(1,3) ;
+
+console.log(arr) ;
+console.log(narr) ;
