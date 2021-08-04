@@ -1,6 +1,6 @@
 // let content = fs.readFileSync("f1.txt") ;
 
-const fs = require("fs");
+// const fs = require("fs");
 
 // console.log(content+"") ;
 
@@ -43,9 +43,24 @@ const fs = require("fs");
 // let strArr = content.split(".") ;
 // console.log(strArr) ;
 
-let arr = [1,2,3,4,5] ;
+// let arr = [1,2,3,4,5] ;
 
-let narr = arr.splice(1,3) ;
+// let narr = arr.splice(1,3) ;
 
-console.log(arr) ;
-console.log(narr) ;
+// console.log(arr) ;
+// console.log(narr) ;
+
+var varName = 1 ;
+
+function a(){
+    console.log(varName) ;
+}
+
+function b(){
+    console.log(varName) ;
+    var varName = 2 ;
+    console.log(varName) ;
+    a() ;
+}
+
+b() ;
