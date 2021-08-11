@@ -29,3 +29,9 @@ let f4 = ()=>{
 }
 
 f4() ;
+
+let batsmanName = "Suresh Raina" ;
+
+let filePth = `${batsmanName}.txt` ;
+
+console.log(filePth) ;
